@@ -1,0 +1,118 @@
+<!DOCTYPEhtml>
+ <html>
+ <head>
+  <meta charset="UTF-8" />
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+body{
+background-image:url("b.jpg");
+}
+ .head {
+ color:brown;
+ background-color:peachpuff;
+ padding:5px;
+ margin-top:-8px;
+ width:100%;
+ margin-left:-8px;
+ padding-right:10px;
+ }
+ .head h2{
+ background-color:orange;
+ color:brown;
+ width:250px;
+ margin-left:500px;
+ border:10px solid;
+ border-image:url(des.jpg)round;
+ border-image-slice:10%;
+ animation:a 3s 1;
+ position:relative;
+ animation-fill:backward;
+ }
+ @keyframes a{
+ from{
+ top:0px;
+ }
+ to{top:30px;background-color:pink;}
+ }
+ .head a{
+ color:black;
+ }
+.content{
+height:250px;
+border-radius:25px;
+width:500px;
+margin-top:10px;
+margin-left:400px;
+background-color:lime;
+padding-top:30px;
+text-indent:40px;
+transition:height 2s;
+box-shadow:5px 5px;
+cursor:all-scroll;
+}
+.content:hover{
+height:150px;
+}
+@media screen and (max-width: 650px) {
+body{
+height:500px;
+}
+.head{
+color:brown;
+ background-color:peachpuff;
+ padding:1px;
+ margin-top:-8px;
+width:456px;
+ margin-left:-8px;
+ padding-right:10px;
+}
+.content{
+  height:250px;
+border-radius:25px;
+width:450px;
+margin-top:10px;
+ margin-left:-1px; 
+background-color:lime;
+padding-top:30px;
+text-indent:40px;
+transition:height 2s;
+box-shadow:5px 5px;
+cursor:all-scroll;
+  }
+  .head h2{
+margin-left:100px;
+background-color:orange;
+ color:brown;
+ width:250px;
+ margin-left:100px;
+ border:10px solid;
+ border-image:url(des.jpg)round;
+ border-image-slice:10%;
+ animation:a 3s 1;
+ position:relative;
+ animation-fill:backward;
+
+ }
+ @keyframes a{
+ from{
+ top:0px;
+ }
+ to{top:30px;background-color:pink;}
+ }
+ .head a{
+ color:black;
+ }
+  }
+  
+</style>
+ </head>
+ <body>
+ <div class="head">
+ <h2>Welcome to Site<a href="#"><i class="fab fa-whatsapp"></i></a></h2>
+</div>
+<div class="content">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+ nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+</div> </body>
+ </html>
