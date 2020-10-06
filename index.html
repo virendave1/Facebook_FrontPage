@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body{
+html,body{
 background-color:white;
 }
 .head{
@@ -70,7 +70,7 @@ background-color: DodgerBlue;
   border:0px solid DodgerBlue;
   }
   .or p{
-  margin-left:540px;
+  margin-left:580px;
   color:#d9d9d9;
   }
   .data input{
@@ -114,16 +114,18 @@ border-radius:4px;
   margin-top:20px;
   font-size:17px;
   }
-  @media only screen and (max-width:640px){
-  body{
-  height:50%;
-  }
+ @media handheld, only screen and (max-width: 767px) {
+html, body
+{
+height:100%;
+overflow-x: hidden;
+}
   .head{
 height:85px;
 background:linear-gradient(to right,#DD4C53 10%,#E25447 100%);
 width:360px;
-margin-left:-8px;
-margin-top:-25px;
+margin-left:-15px;
+padding-top:10px;
 padding-right:8px;
 display:flex;
 flex-wrap: wrap;
@@ -139,7 +141,7 @@ display:flex;
 .head p{
 color:White;
 font-family:Arial; 
-font-size:10px;
+font-size:16px;
 padding-left:30px;
 }
 .head input{
@@ -172,7 +174,66 @@ height:90px;
 width:132px;
 display:flex;
 } 
+ button{
+background-color: DodgerBlue;
+  color: white;
+  font-size: 16px;
+  height:30px;
+  width:220px;
+  margin-top:20px;
+  text-align:left;
+  padding-left:21px;
+  border-radius:6px;
+  margin-left:61px;
+  border:0px solid DodgerBlue;
   }
+  .or p{
+  margin-left:25px;
+  size:10px;
+  color:#d9d9d9;
+  }
+  .data input{
+  margin-left:41px;
+  margin-top:17px;
+  width:250px;
+text-align:center;
+height:26px;
+border-radius:4px;
+  }
+  .data i{
+  margin-left:10px;
+  }
+.data button{
+   color: white;
+  font-size: 16px;
+  height:38px;
+  width:86px;
+  margin-top:20px;
+  text-align:left;
+  padding-right:8px;
+  padding-left:14px;
+  border-radius:6px;
+  margin-left:117px;
+  border:0px solid DodgerBlue;
+  }
+  hr{
+  margin-top:40px;
+  border:1px solid #d9d9d9;
+  }
+  a{
+  text-decoration:none;
+  color:#0091D5;
+  margin-left:102px;
+  margin-top:15px;
+  }  
+  .foot a{
+  color:#555555;
+  font-weight:bold;
+  margin-left:61px;
+  margin-top:20px;
+  font-size:17px;
+  }
+ }
 </style>
 </head>
 <body>
@@ -196,7 +257,7 @@ Instagram
 <button class="btn"><i class="fa fa-facebook"> Continue with Facebook</i></button>
 </div>
 <br>
-<div class="or"> <p>─────────────── OR ───────────────</p></div>
+<div class="or"> <p>─────────── OR ────────────</p></div>
 <div class="data">
 <input type="text" placeholder="Phonenumber or email or username"></input><br>
 <input type="password" placeholder="Passsword" id="myInput"><i class="far fa-eye" onclick="pass()"></i></input><br><br>
