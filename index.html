@@ -4,241 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body{
-background-color:white;
-}
-.head{
-height:100px;
-background:linear-gradient(to right,#DD4C53 10%,#E25447 100%);
-width:1527px;
-margin-left:-8px;
-margin-top:-25px;
-padding-right:8px;
-}
-.head h2{
-color:White;
-padding-top:17px;
-font-family:Arial;
-font-size:27px;
-padding-left:70px;
-}
-.head p{
-color:White;
-font-family:Arial;
-padding-left:70px;
-margin-top:-8px;
-}
-.head input{
-margin-left:1120px;
-margin-top:-100px;
-padding-left:13px;
-padding-right:13px;
-padding-top:13px;
-padding-bottom:6px;
-border:2px solid white;
-border-radius:4px;
-background-color:#E25349;
-color:White;
-}
-.lang select{
-margin-top:55px;
-padding-top:5px;
-padding-bottom:5px;
-color:#D9D9D9;
-border:0px white;
-margin-left:680px;
-font-size:19px;
-}
-img{
-margin-left:630px;
-margin-top:20px;
-height:113px;
-width:197px;
-}  
-button{
-background-color: DodgerBlue;
-  color: white;
-  font-size: 16px;
-  height:30px;
-  width:220px;
-  margin-top:20px;
-  text-align:left;
-  padding-left:21px;
-  border-radius:6px;
-  margin-left:621px;
-  border:0px solid DodgerBlue;
-  }
-  .or p{
-  margin-left:580px;
-  color:#d9d9d9;
-  }
-  .data input{
-  margin-left:575px;
-  margin-top:17px;
-  width:300px;
-text-align:center;
-height:26px;
-border-radius:4px;
-  }
-  .data i{
-  margin-left:10px;
-  }
-  .data button{
-   color: white;
-  font-size: 16px;
-  height:38px;
-  width:86px;
-  margin-top:20px;
-  text-align:left;
-  padding-right:8px;
-  padding-left:14px;
-  border-radius:6px;
-  margin-left:682px;
-  border:0px solid DodgerBlue;
-  }
-  hr{
-  margin-top:40px;
-  border:1px solid #d9d9d9;
-  }
-  a{
-  text-decoration:none;
-  color:#0091D5;
-  margin-left:670px;
-  margin-top:15px;
-  }  
-  .foot a{
-  color:#555555;
-  font-weight:bold;
-  margin-left:591px;
-  margin-top:20px;
-  font-size:17px;
-  }
- @media handheld, only screen and (max-width: 767px) {
-html, body
-{
-height:100%;
-overflow-x: hidden;
-margin-top:0px;
-margin-left:0px;
-margin-right:0px;
-}
-  .head{
-height:85px;
-background:linear-gradient(to right,#DD4C53 10%,#E25447 100%);
-width:360px;
-padding-top:10px;
-display:flex;
-flex-wrap: wrap;
-}
-.head h2{
-color:White;
-padding-top:10px;
-font-family:Arial;
-font-size:20px;
-padding-left:30px;
-display:flex;
-}
-.head p{
-color:White;
-font-family:Arial; 
-font-size:16px;
-padding-left:30px;
-}
-.head input{
-margin-left:260px;
-margin-top:-40px;
-padding-left:13px;
-padding-right:13px;
-padding-top:13px;
-padding-bottom:6px;
-border:2px solid white;
-border-radius:4px;
-background-color:#E25349;
-color:White;
-display:flex;
-}
-.lang select{
-margin-top:20px;
-padding-top:5px;
-padding-bottom:5px;
-color:#D9D9D9;
-background-color:white;
-border:0px white;
-margin-left:130px;
-font-size:13px;
-display:flex;
-}
-img{
-margin-left:100px;
-margin-top:20px;
-height:90px;
-width:132px;
-display:flex;
-} 
- button{
-background-color: DodgerBlue;
-  color: white;
-  font-size: 16px;
-  height:30px;
-  width:220px;
-  margin-top:20px;
-  text-align:left;
-  padding-left:21px;
-  border-radius:6px;
-  margin-left:61px;
-  border:0px solid DodgerBlue;
-  }
-  .or p{
-  margin-left:25px;
-  size:10px;
-  color:#d9d9d9;
-  }
-  .data input{
-  margin-left:41px;
-  margin-top:17px;
-  width:250px;
-text-align:center;
-height:26px;
-border-radius:4px;
-  }
-  .data i{
-  margin-left:10px;
-  }
-.data button{
-   color: white;
-  font-size: 16px;
-  height:38px;
-  width:86px;
-  margin-top:17px;
-  text-align:left;
-  padding-right:8px;
-  padding-left:14px;
-  border-radius:6px;
-  margin-left:117px;
-  border:0px solid DodgerBlue;
-  }
-  hr{
-  margin-top:30px;
-  border:1px solid #d9d9d9;
-  }
-  a{
-  text-decoration:none;
-  color:#0091D5;
-  margin-left:102px;
-  margin-top:15px;
-  }  
-  .foot a{
-  color:#555555;
-  font-weight:bold;
-  margin-left:61px;
-  margin-top:20px;
-  font-size:17px;
-  }
- }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script>
+function pass() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 <div class="head">
 <b><h2>
 Instagram
@@ -259,7 +37,7 @@ Instagram
 <button class="btn"><i class="fa fa-facebook"> Continue with Facebook</i></button>
 </div>
 <br>
-<div class="or"> <p>─────────── OR ────────────</p></div>
+<div class="or"> <p>───────── OR ──────────</p></div>
 <div class="data">
 <input type="text" placeholder="Phonenumber or email or username"></input><br>
 <input type="password" placeholder="Passsword" id="myInput"><i class="far fa-eye" onclick="pass()"></i></input><br><br>
@@ -268,15 +46,5 @@ Instagram
 </div>
 <hr></hr>
 <div class="foot"><a href="#">Don't have an account? SignUp</a></div>
-<script>
-function pass() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-</script>
 </body>
 </html>
